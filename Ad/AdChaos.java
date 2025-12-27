@@ -54,7 +54,7 @@ public class AdChaos {
             Image img;
             try {
                 // まずは URL から画像を取得してみる（ネット接続があればこちらが使われる）
-                img = new ImageIcon(new URL("https://via.placeholder.com/300x150.png")).getImage();
+                img = new ImageIcon(new URL("ad.png")).getImage();
             } catch (Exception e) {
                 // 失敗した場合は、ローカルファイル "ad.png" を使用
                 img = new ImageIcon("ad.png").getImage();
