@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevilBrowser - ダウンロード</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="custom-cursor"></div>
+    <header class="header">
+        <div class="logo"><a href="index.html">DevilBrowser</a></div>
+        <nav class="nav">
+            <a href="index.html">ホーム</a>
+            <a href="introduction.html">特徴</a>
+            <a href="download.html" class="active">ダウンロード</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>さあ、始めましょう</h1>
+        <p>DevilBrowserとの新たな関係を始めるための手順はこちらです。ご利用には<strong>Java開発環境 (JDK)</strong> と、少しの覚悟が必要です。</p>
+
+        <h2>ビルドプロセス</h2>
+        <p><code>src</code>ディレクトリにあるソースコードから、以下のコマンドでアプリケーションをビルドします。これは、私たちのパートナーシップの第一歩です。</p>
+        <pre><code>javac -cp src src/DevilBrowser.java src/OopsSearchEngine.java src/SettingsDialog.java</code></pre>
+
+        <h2>実行プロセス</h2>
+        <p>ビルドが正常に完了したら、以下のコマンドでDevilBrowserを起動できます。新しい世界があなたを待っています。</p>
+        <pre><code>java -cp src DevilBrowser</code></pre>
+
+        <h2>利用規約</h2>
+        <p>本ソフトウェアは「現状有姿」で提供され、その動作はすべて仕様です。本ソフトウェアの使用から生じるいかなる直接的または間接的な結果（時間、生産性、精神的平穏の損失を含むがこれらに限定されない）について、開発者は一切の責任を負いません。</p>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 DevilBrowser Project. 私たちは常にユーザーを想っています。</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

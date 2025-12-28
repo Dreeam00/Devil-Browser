@@ -1,0 +1,360 @@
+/*
+    WARNING: This stylesheet is designed to be intentionally chaotic and user-unfriendly.
+    It will make the website extremely difficult to read and navigate.
+    Proceed with caution.
+*/
+
+body {
+    background: linear-gradient(45deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000);
+    background-size: 400% 400%;
+    animation: gradient-chaos 10s ease infinite, color-flash 0.1s infinite alternate;
+    color: #ff00ff; /* Eye-searing magenta */
+    font-family: 'Comic Sans MS', 'Impact', sans-serif; /* Unprofessional fonts */
+    font-size: 1.5em; /* Large and intrusive */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll from massive elements */
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='50%'>💩</text></svg>") 15 15, auto; /* Poop emoji cursor */
+}
+
+@keyframes gradient-chaos {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes color-flash {
+    from { filter: invert(0); }
+    to { filter: invert(1); }
+}
+
+#custom-cursor {
+    display: none !important; /* Hide custom cursor, let system cursor be chaotic */
+}
+
+.header {
+    background-color: #00ff00; /* Neon green */
+    border: 5px dashed #ff00ff; /* Magenta dashed border */
+    padding: 10px;
+    position: sticky; /* Always visible but annoying */
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    animation: header-wobble 0.5s infinite;
+}
+
+@keyframes header-wobble {
+    0% { transform: translateX(0px); }
+    25% { transform: translateX(5px); }
+    50% { transform: translateX(0px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0px); }
+}
+
+.logo a {
+    color: #ff0000; /* Bright red */
+    font-size: 3em;
+    text-shadow: 5px 5px 0px #0000ff; /* Blue shadow */
+    animation: text-flicker 0.1s infinite;
+    position: relative;
+    z-index: 1001; /* Above other elements */
+}
+
+@keyframes text-flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap; /* Links can wrap annoyingly */
+    justify-content: center;
+}
+
+.nav a {
+    color: #0000ff; /* Blue */
+    background-color: #ffff00; /* Yellow */
+    padding: 5px 10px;
+    margin: 5px;
+    border: 2px solid #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+    animation: link-rotate 2s infinite linear;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='50%'>❌</text></svg>") 15 15, auto; /* X mark cursor */
+}
+
+@keyframes link-rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.container {
+    max-width: 80%; /* Don't use 960px, break it */
+    margin: 20px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    border: 10px outset #ff9900; /* Orange outset border */
+    box-shadow: 0 0 20px 10px #ff00ff; /* Magenta glow */
+    animation: container-breathe 5s infinite alternate;
+    position: relative;
+    z-index: 500;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='50%'>❓</text></svg>") 15 15, auto;
+}
+
+@keyframes container-breathe {
+    from { transform: scale(1); }
+    to { transform: scale(1.02); }
+}
+
+h1, h2, h3 {
+    color: #cc00cc; /* Purple */
+    border-bottom: 3px double #33ff33; /* Green double border */
+    padding-bottom: 10px;
+    font-weight: 900;
+    text-align: center;
+    animation: heading-spin 3s infinite linear;
+    position: relative;
+    z-index: 501;
+}
+
+@keyframes heading-spin {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #333333;
+    animation: text-jiggle 0.5s infinite;
+    word-spacing: 0.5em; /* Large word spacing */
+    letter-spacing: 0.1em; /* Large letter spacing */
+    font-family: 'Times New Roman', serif; /* Classic, hard to read with other styles */
+    position: relative;
+    z-index: 500;
+}
+
+@keyframes text-jiggle {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(1px); }
+    50% { transform: translateX(0); }
+    75% { transform: translateX(-1px); }
+    100% { transform: translateX(0); }
+}
+
+a {
+    color: #ff0000; /* Red links */
+    text-decoration: underline wavy #00ff00; /* Wavy green underline */
+    font-weight: bold;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='50%'>🤯</text></svg>") 15 15, auto;
+}
+
+pre {
+    background: #000000; /* Black background */
+    border: 5px solid #ff0000; /* Red border */
+    color: #00ffff; /* Cyan text */
+    padding: 15px;
+    border-radius: 0; /* No rounded corners */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Courier New', monospace;
+    font-size: 0.8em; /* Small code */
+    animation: pre-shake 0.2s infinite;
+    position: relative;
+    z-index: 500;
+}
+
+@keyframes pre-shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(0.5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-0.5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+code {
+    background: #ff00ff; /* Magenta */
+    color: #ffff00; /* Yellow */
+    padding: 2px 4px;
+    border-radius: 0;
+    font-weight: bold;
+    animation: code-flash 0.1s infinite alternate;
+}
+
+@keyframes code-flash {
+    from { opacity: 1; }
+    to { opacity: 0.7; }
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px; /* Big margin */
+    background-color: #ffcc00; /* Orange */
+    border-top: 5px dotted #00ff00; /* Green dotted border */
+    font-size: 1.5em;
+    color: #800080; /* Purple */
+    animation: footer-slide 10s infinite alternate;
+    position: relative;
+    z-index: 1000;
+}
+
+@keyframes footer-slide {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(20px); }
+    100% { transform: translateX(0); }
+}
+
+/* --- Fake Popup --- */
+.fake-popup {
+    position: fixed;
+    background: #ff0000; /* Red popup */
+    border: 5px solid #ffff00; /* Yellow border */
+    box-shadow: 0 0 25px 5px #ff00ff; /* Magenta glow */
+    padding: 15px 25px;
+    z-index: 100000; /* Always on top */
+    border-radius: 0;
+    opacity: 1;
+    animation: popup-jiggle 0.2s infinite alternate;
+    width: 300px;
+    font-family: 'Impact', sans-serif;
+    color: #ffffff;
+}
+
+@keyframes popup-jiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(1deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-1deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.fake-popup h3 {
+    margin: 0 0 10px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #ffff00;
+    font-size: 1.5em;
+    color: #ffffff;
+    animation: text-flicker 0.1s infinite;
+}
+.fake-popup p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #000000; /* Black text */
+    animation: text-flicker 0.1s infinite alternate;
+}
+
+/* --- Fake Loader --- */
+.fake-loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(45deg, #ff0000, #ff0000 10px, #00ff00 10px, #00ff00 20px); /* Striped loading */
+    background-size: 200% 200%;
+    animation: loader-stripes 2s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    flex-direction: column;
+}
+
+@keyframes loader-stripes {
+    from { background-position: 0 0; }
+    to { background-position: 200% 0; }
+}
+
+.fake-loader-overlay p {
+    margin-top: 20px;
+    font-size: 2em;
+    color: #ffff00; /* Yellow text */
+    font-weight: bold;
+    animation: text-flicker 0.1s infinite;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.spinner {
+    border: 8px solid #ff00ff; /* Magenta spinner */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-top-color: #ffff00; /* Yellow top */
+    border-left-color: #00ffff; /* Cyan left */
+    border-bottom-color: #ff0000; /* Red bottom */
+    animation: spin-kf 0.5s linear infinite; /* Faster spin */
+}
+
+/* --- Existing utility classes, modified for chaos --- */
+.button-primary, .button-secondary {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 0;
+    font-weight: bold;
+    animation: button-flash 0.1s infinite alternate;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='50%'>🤯</text></svg>") 15 15, auto;
+    position: relative;
+    z-index: 500;
+}
+
+@keyframes button-flash {
+    from { background-color: #ff0000; color: #ffff00; }
+    to { background-color: #ffff00; color: #ff0000; }
+}
+
+.button-primary { background-color: #ff0000; color: #ffff00; }
+.button-primary:hover { background-color: #00ff00; color: #ff00ff; text-decoration: none; }
+
+.button-secondary { background-color: #0000ff; color: #ff00ff; }
+.button-secondary:hover { background-color: #ff0000; color: #ffff00; text-decoration: none; }
+
+.spin-word {
+    display: inline-block;
+    animation: spin-kf 1s linear infinite; /* Faster spin */
+    transform-origin: center center;
+    position: relative;
+    z-index: 500;
+}
+
+/* Image styling */
+img {
+    animation: image-glitch 0.5s infinite alternate;
+    border: 5px solid #ff00ff;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    filter: contrast(200%) saturate(200%); /* Over-saturate */
+}
+
+@keyframes image-glitch {
+    0% { transform: scale(1) rotate(0deg); filter: hue-rotate(0deg); }
+    50% { transform: scale(1.05) rotate(2deg); filter: hue-rotate(180deg); }
+    100% { transform: scale(1) rotate(0deg); filter: hue-rotate(360deg); }
+}
+
+/* --- NEW: Go To Top button style --- */
+.go-to-top-btn {
+    position: fixed;
+    /* Position will be set by JS dynamically */
+    z-index: 100000;
+    padding: 10px 20px;
+    font-family: 'Impact', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    border: 3px double yellow;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='50%'>🖕</text></svg>") 15 15, auto;
+    animation: btn-flash 0.2s infinite alternate;
+    box-shadow: 0 0 10px 5px rgba(255,255,0,0.7);
+    transition: all 0.1s linear; /* For JS movement */
+}
+
+@keyframes btn-flash {
+    from { background-color: #ff0000; }
+    to { background-color: #ffcc00; }
+}
