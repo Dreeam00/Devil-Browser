@@ -83,9 +83,10 @@ DevilBrowserは、以下のような様々な方法でユーザーを不快に�
 
 1.  ソースコードをコンパイルします。
     ```bash
-    javac -d . src/DevilBrowser.java src/OopsSearchEngine.java src/SettingsDialog.java
+    javac -d . DevilBrowser.java OopsSearchEngine.java SettingsDialog.java
     ```
 2.  アプリケーションを実行します。
     ```bash
-    java DevilBrowser
+    cd ..
+    java -cp Devil-Browser-main DevilBrowser
     ```
